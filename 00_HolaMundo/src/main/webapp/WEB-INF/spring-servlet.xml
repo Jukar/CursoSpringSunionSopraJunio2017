@@ -32,4 +32,10 @@
 		<property name="nombre" value="juan"/>
 	</bean>
 	
+	<bean name="/applicationSwaggerConfig" 
+		class="com.curso.sunion.fullstack.ApplicationSwaggerConfig"/>
+	
+	<mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/"/>
+    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
+	
 </beans>

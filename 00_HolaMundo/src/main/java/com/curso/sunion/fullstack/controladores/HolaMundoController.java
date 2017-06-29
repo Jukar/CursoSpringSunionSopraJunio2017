@@ -34,6 +34,11 @@ public class HolaMundoController {
 		this.negocio = negocio;
 	}*/
 
+	@RequestMapping("/Otro")
+	public String saludar(){
+		return "saludo";
+	}
+	
 	@RequestMapping("/Saludar")
 	public String saludar(Persona persona, 
 			HttpServletRequest request, Model modelo){
